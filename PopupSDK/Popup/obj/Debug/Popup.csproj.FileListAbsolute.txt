@@ -1,0 +1,8 @@
+D:\PopupManagerUnity\PopupSDK\Popup\bin\Debug\Popup.dll
+D:\PopupManagerUnity\PopupSDK\Popup\bin\Debug\Popup.pdb
+D:\PopupManagerUnity\PopupSDK\Popup\bin\Debug\UnityEngine.dll
+D:\PopupManagerUnity\PopupSDK\Popup\bin\Debug\UnityEngine.xml
+D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.csproj.CoreCompileInputs.cache
+D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.csproj.CopyComplete
+D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.dll
+D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.pdb
