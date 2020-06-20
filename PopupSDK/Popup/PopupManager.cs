@@ -64,12 +64,17 @@ namespace PopupSDK.Popup
 
         public void AddContentToPopupCanvas(string contentTextMessageButton, Action _OnClickContentPopup)
         {
-            AddButtonContent();
+            AddButtonContent(contentTextMessageButton,_OnClickContentPopup);
         }
 
-        public void AddButtonContent()
+        public void AddButtonContent(string textbtn,Action ClickPopupContent)
         {
+            listContentPopup.Add(new PopupContentUI(textbtn, _configPopup.ColorTextButtonContent, _configPopup.ColorBackgroundButtonContent, _commonCanvasPopup.transform.GetChild(0), _commonContentPopup, ClickPopupContent));
 
+            foreach (PopupContentUI item in listContentPopup)
+            {
+                item.CreateButtonInsidePopup();
+            }
         }
 
 
@@ -80,9 +85,8 @@ namespace PopupSDK.Popup
 
         public void ShowPopup()
         {
-            DefaulInitCreatePopup();
-
-
+        
+           // DefaulInitCreatePopup();
         }
     }
 }

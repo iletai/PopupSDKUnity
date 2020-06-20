@@ -12,7 +12,7 @@ namespace Popup.Common
         private Color       ColorTextButton;
         private Color       ColorBackgroundButton;
         private Transform   ParentTransformForButton;
-        private GameObject  PrefabsGameObjectButton;
+        private GameObject  PrefabsContent;
         private Action      OnContentClick;
 
         private GameObject gameObjectParseForButtonInsidePopup;
@@ -25,10 +25,11 @@ namespace Popup.Common
             this.ColorTextButton = colortextbutton;
             this.ParentTransformForButton = transformbutton;
             this.OnContentClick = ClickContentPopup;
+            this.PrefabsContent = prefabsetforbutton;
         }
         public void CreateButtonInsidePopup()
         {
-            gameObjectParseForButtonInsidePopup =(GameObject)GameObject.Instantiate(PrefabsGameObjectButton);
+            gameObjectParseForButtonInsidePopup =(GameObject)GameObject.Instantiate(PrefabsContent);
             gameObjectParseForButtonInsidePopup.transform.SetParent(ParentTransformForButton, false);
             gameObjectParseForButtonInsidePopup.transform.localPosition = new Vector3(1, 1, 1);
             gameObjectParseForButtonInsidePopup.GetComponent<Image>().color = ColorBackgroundButton;

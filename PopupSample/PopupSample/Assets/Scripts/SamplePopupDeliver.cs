@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using Popup.Extension;
+using PopupSDK.Popup;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,8 +26,9 @@ public class SamplePopupDeliver : MonoBehaviour
 
     public void TestShowPopupClicked()
     {
-        const string PopupManager = "PopupSDK/PopupManager";
-        _popupManager = (GameObject)Instantiate(Resources.Load(PopupManager, typeof(GameObject)));
-
+        const string _PopupManager = "PopupSDK/PopupManager";
+        _popupManager = (GameObject)Instantiate(Resources.Load(_PopupManager, typeof(GameObject)));
+        PopupManager.Instance.AddContentToPopupCanvas("Hello everyone", () => { Debug.Log("clicked".BoldLogDebug());});
+        PopupManager.Instance.ShowPopup();
     }
 }

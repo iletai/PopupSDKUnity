@@ -17,6 +17,9 @@ namespace Popup.Utils
         public Transform            ParentTransformButtonInsidePopup { get; set; }
         public TypePopupDefine      DefaulStylePopup { get; set; }
 
+        public Color                ColorTextButtonContent { get; set; }
+        public Color                ColorBackgroundButtonContent { get; set; }
+
         public static PopupConfig DefaulConfigPopup()
         {
             return new PopupConfig
@@ -25,7 +28,9 @@ namespace Popup.Utils
                 PrefabButton                        = null,
                 OnSelectOptionPopup                 = null,
                 ParentTransformButtonInsidePopup    = null,
-                DefaulStylePopup                    = TypePopupDefine.SINGLE_BUTTON_POPUP
+                DefaulStylePopup                    = TypePopupDefine.SINGLE_BUTTON_POPUP,
+                ColorTextButtonContent              = Color.black,
+                ColorBackgroundButtonContent        = Color.white
             };
         }
     }
