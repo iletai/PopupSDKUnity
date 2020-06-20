@@ -42,8 +42,12 @@
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\PopupContentUI.cs" />
     <Compile Include="Enum\TypePopupDefine.cs" />
     <Compile Include="Extension\LogExtension.cs" />
     <Compile Include="PopupManager.cs" />

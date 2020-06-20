@@ -6,3 +6,13 @@ D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.csproj.CoreCompileInputs.cac
 D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.csproj.CopyComplete
 D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.dll
 D:\PopupManagerUnity\PopupSDK\Popup\obj\Debug\Popup.pdb
+D:\PopupSDKUnity\PopupSDK\Popup\bin\Debug\Popup.dll
+D:\PopupSDKUnity\PopupSDK\Popup\bin\Debug\Popup.pdb
+D:\PopupSDKUnity\PopupSDK\Popup\bin\Debug\UnityEngine.dll
+D:\PopupSDKUnity\PopupSDK\Popup\bin\Debug\UnityEngine.xml
+D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.csproj.CoreCompileInputs.cache
+D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.csproj.CopyComplete
+D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.dll
+D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.pdb
+D:\PopupSDKUnity\PopupSDK\Popup\bin\Debug\UnityEngine.UI.dll
+D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.csprojAssemblyReference.cache

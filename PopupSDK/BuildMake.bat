@@ -1,12 +1,12 @@
 set libExport=%1
 
 set rootPath=%~dp0..\
-set unityProject="PopupSample\PopupSample\Assets\PopupSDK"
+set unityProject="PopupSample\PopupSample\Assets\Resources\PopupSDK"
 
 @echo "Export: %libExport%"
 @echo "Root: %rootPath%"
 
-set unityProject="PopupSample\PopupSample\Assets\PopupSDK"
+set unityProject="PopupSample\PopupSample\Assets\Resources\PopupSDK"
 
 if exist "%libExport%Newtonsoft.Json.dll" (
   del "%libExport%Newtonsoft.Json.dll"
