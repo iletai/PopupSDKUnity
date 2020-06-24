@@ -63,7 +63,8 @@ namespace Popup.Utils
 
         public void SetBackgroundColor(Color color)
         {
-
+            //Using config get in Manager to send param and set for UI Popup.
+            //GameObject.<Image/Text..>().color = color
         }
     }
 }

@@ -99,7 +99,7 @@ namespace PopupSDK.Popup
         }
 
         ///Example set background:
-        public void SetBackgroundCommonUI(Color color)
+        public override void SetBackgroundCommonUI(Color color)
         {
             UIPopup.SetBackgroundColor(color);
         }
