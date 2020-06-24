@@ -60,5 +60,10 @@ namespace Popup.Utils
         {
             PanelTitle.GetComponentInChildren<Text>().text = texttile;
         }
+
+        public void SetBackgroundColor(Color color)
+        {
+
+        }
     }
 }

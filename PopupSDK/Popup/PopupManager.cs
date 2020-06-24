@@ -15,16 +15,16 @@ namespace PopupSDK.Popup
 {
     public class PopupManager : CommonPopup
     {
-         const string PATH_POPUP_CANVAS         = "PopupSDK/CommonPopupCanvas";
-         const string PATH_CONTENT_POPUP        = "PopupSDK/CommonPopupButton";
+        const string PATH_POPUP_CANVAS = "PopupSDK/CommonPopupCanvas";
+        const string PATH_CONTENT_POPUP = "PopupSDK/CommonPopupButton";
 
-        private static PopupManager               _instance;
+        private static PopupManager _instance;
         private UIConfigPopup UIPopup;
-        private PopupConfig   PopupConfig;
- 
-        private GameObject                        _commonCanvasPopup;
-        private GameObject                        _eventSystems;
-        private GameObject                        _commonContentPopup;
+        private PopupConfig PopupConfig;
+
+        private GameObject _commonCanvasPopup;
+        private GameObject _eventSystems;
+        private GameObject _commonContentPopup;
 
         private List<PopupContentUI> listContentPopup = new List<PopupContentUI>();
 
@@ -37,13 +37,13 @@ namespace PopupSDK.Popup
 
         public void Awake()
         {
-            _commonCanvasPopup =  (GameObject)Instantiate(Resources.Load(PATH_POPUP_CANVAS, typeof(GameObject)));
+            _commonCanvasPopup = (GameObject)Instantiate(Resources.Load(PATH_POPUP_CANVAS, typeof(GameObject)));
             _commonContentPopup = (GameObject)Resources.Load(PATH_CONTENT_POPUP, typeof(GameObject));
             UIPopup = _commonCanvasPopup.GetComponent<UIConfigPopup>();
         }
 
         public void DefaulInitCreatePopup()
-        {   
+        {
             if (_commonCanvasPopup)
             {
                 _commonCanvasPopup.GetComponent<CanvasGroup>().alpha = 0.0f;
@@ -65,14 +65,14 @@ namespace PopupSDK.Popup
 
         public void AddContentToPopupCanvas(string contentTextMessageButton, Action _OnClickContentPopup)
         {
-            AddButtonContent(contentTextMessageButton,_OnClickContentPopup);
+            AddButtonContent(contentTextMessageButton, _OnClickContentPopup);
         }
 
-        public void AddButtonContent(string textbtn,Action ClickPopupContent)
+        public void AddButtonContent(string textbtn, Action ClickPopupContent)
         {
             listContentPopup.Add(new PopupContentUI(textbtn, PopupConfig.DefaulConfigPopup().ColorCommonText, PopupConfig.DefaulConfigPopup().ColorCommonBackground, UIPopup.Content.transform, _commonContentPopup, ClickPopupContent));
 
-          
+
         }
 
         public void ShowPopup(string textShowTitle, Action confirmbutton)
@@ -83,13 +83,25 @@ namespace PopupSDK.Popup
             }
             UIPopup.SetTitleText(textShowTitle);
             UIPopup.ConfirmButtonClick(confirmbutton);
-
+            ///Sample using config
+            SetBackgroundCommonUI(PopupConfig.BackgroundCanvasPopupColor);
+            ///
         }
 
+        /// <summary>
+        /// By create new config. We have a config for handle set param. If you don't create config.
+        /// Static method in config will auto create config. We can using it with method like this: PopupConfig cf = new PopupConfig.DefaulConfig()
+        /// </summary>
+        /// <param name="config"></param>
         public override void SetConfig(PopupConfig config)
         {
             config = PopupConfig;
         }
 
+        ///Example set background:
+        public void SetBackgroundCommonUI(Color color)
+        {
+            UIPopup.SetBackgroundColor(color);
+        }
     }
 }
