@@ -85,4 +85,4 @@ starting your game__.
 ## Result:
 ![Image](image.png)
  
-![Image2](mutil.png.png)
+![Image2](mutil.png)
