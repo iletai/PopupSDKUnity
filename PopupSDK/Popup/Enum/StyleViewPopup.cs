@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Popup.Enum
 {
-    public enum TypePopupDefine
+    public enum StyleViewPopup
     {
-        SINGLE_BUTTON_POPUP,
-        DOUBLE_BUTTON_POPUP,
-        MULTI_BUTTON_POPUP
+        NONE,
+        DARK_STYLE,
+        LIGHT_STYLE
     }
-
-
-
-
 }
