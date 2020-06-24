@@ -82,4 +82,7 @@ Make sure to do the following if they are relevant to your game:
   __Note: adding additional scopes with most likely require user consent when
 starting your game__.
 
+## Result:
+![Image](image.png)
  
+![Image](mutil.png.png)
