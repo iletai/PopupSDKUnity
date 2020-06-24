@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Popup.Utils
+namespace Popup.Enum
 {
-    public class ConfigPopup
+    public enum StyleViewPopup
     {
-
-
+        NONE,
+        DARK_STYLE,
+        LIGHT_STYLE
     }
 }

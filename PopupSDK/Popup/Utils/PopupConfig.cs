@@ -11,26 +11,26 @@ namespace Popup.Utils
     public class PopupConfig
     {
         public Color                BackgroundCanvasPopupColor { get; set; }
-        public GameObject           PrefabButton { get; set; }
-        public Action               OnSelectOptionPopup { get; set; }
-        public string               TextButtonPopup { get; set; }
-        public Transform            ParentTransformButtonInsidePopup { get; set; }
-        public TypePopupDefine      DefaulStylePopup { get; set; }
+        public StyleViewPopup       DefaulStylePopup { get; set; }
+        public Color                ColorCommonBackground { get; set; }
+        public Color                ColorCommonText { get; set; }
+        public float                WithPopup { get; set; }
+        public float                HeightPopup { get; set; }
 
-        public Color                ColorTextButtonContent { get; set; }
-        public Color                ColorBackgroundButtonContent { get; set; }
 
+        /// <summary>
+        /// Static method create deafaul config 
+        /// </summary>
+        /// <returns></returns>
         public static PopupConfig DefaulConfigPopup()
         {
             return new PopupConfig
             {
-                BackgroundCanvasPopupColor          = Color.white,
-                PrefabButton                        = null,
-                OnSelectOptionPopup                 = null,
-                ParentTransformButtonInsidePopup    = null,
-                DefaulStylePopup                    = TypePopupDefine.SINGLE_BUTTON_POPUP,
-                ColorTextButtonContent              = Color.black,
-                ColorBackgroundButtonContent        = Color.white
+                DefaulStylePopup = StyleViewPopup.NONE,
+                ColorCommonBackground = Color.white,
+                ColorCommonText = Color.black,
+                WithPopup = 500,
+                HeightPopup = 500,
             };
         }
     }

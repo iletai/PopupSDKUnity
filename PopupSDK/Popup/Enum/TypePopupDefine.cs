@@ -13,12 +13,7 @@ namespace Popup.Enum
         MULTI_BUTTON_POPUP
     }
 
-    public enum StyleViewPopup
-    {
-        NONE,
-        DARK_STYLE,
-        LIGHT_STYLE
-    }
+
 
 
 }
