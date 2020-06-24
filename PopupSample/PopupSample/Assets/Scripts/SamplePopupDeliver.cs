@@ -28,7 +28,7 @@ public class SamplePopupDeliver : MonoBehaviour
     {
         const string _PopupManager = "PopupSDK/PopupManager";
         _popupManager = (GameObject)Instantiate(Resources.Load(_PopupManager, typeof(GameObject)));
-        PopupManager.Instance.AddContentToPopupCanvas("Hello everyone", () => { Debug.Log("clicked".BoldLogDebug());});
-        PopupManager.Instance.ShowPopup();
+        PopupManager.Instance.AddButtonContent("hELLO", () => { LogExtension.LogColor("Heelo"); });
+         PopupManager.Instance.ShowPopup();
     }
 }

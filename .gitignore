@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+/PopupSample/PopupSample/Temp
+/PopupSample/PopupSample/Library
+/PopupSample/PopupSample/obj
