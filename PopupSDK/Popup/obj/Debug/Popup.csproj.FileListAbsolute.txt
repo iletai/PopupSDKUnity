@@ -15,4 +15,3 @@ D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.csproj.CopyComplete
 D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.dll
 D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.pdb
 D:\PopupSDKUnity\PopupSDK\Popup\bin\Debug\UnityEngine.UI.dll
-D:\PopupSDKUnity\PopupSDK\Popup\obj\Debug\Popup.csprojAssemblyReference.cache
