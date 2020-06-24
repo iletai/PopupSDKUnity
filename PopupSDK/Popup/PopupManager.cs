@@ -84,7 +84,7 @@ namespace PopupSDK.Popup
             UIPopup.SetTitleText(textShowTitle);
             UIPopup.ConfirmButtonClick(confirmbutton);
             ///Sample using config
-            SetBackgroundCommonUI(PopupConfig.BackgroundCanvasPopupColor);
+          SetBackgroundCommonUI(PopupConfig.BackgroundCanvasPopupColor);
             ///
         }
 
@@ -95,7 +95,7 @@ namespace PopupSDK.Popup
         /// <param name="config"></param>
         public override void SetConfig(PopupConfig config)
         {
-            config = PopupConfig;
+            PopupConfig = config;
         }
 
         ///Example set background:
