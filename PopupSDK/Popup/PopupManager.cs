@@ -83,7 +83,6 @@ namespace PopupSDK.Popup
         public void ShowPopup()
         {
         
-           // DefaulInitCreatePopup();
         }
     }
 }
